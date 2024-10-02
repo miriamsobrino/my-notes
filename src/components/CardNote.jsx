@@ -45,7 +45,7 @@ export const CardNote = ({
           type='text'
           className={` ${
             isSaved && !isEditing ? 'bg-zinc-100' : 'bg-zinc-50'
-          } w-60 max-h-44 focus:outline-0 resize-none  dark:bg-transparent`}
+          } w-60 max-h-44 focus:outline-none resize-none border-none  dark:bg-transparent`}
           placeholder='Type to add a note...'
           maxLength={maxLengthCharacters}
           value={contentNote}
