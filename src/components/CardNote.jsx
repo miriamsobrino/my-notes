@@ -69,7 +69,7 @@ export const CardNote = ({
       <div className='flex justify-between w-full items-end'>
         <small className='text-zinc-400'>{date}</small>
 
-        <div className='flex justify-end gap-2 items-center '>
+        <div className='flex justify-end gap-2 items-center  '>
           <button onClick={handleEdit}>
             <EditIcon />
           </button>
@@ -81,7 +81,7 @@ export const CardNote = ({
               isSaved && !isEditing
                 ? 'bg-slate-200 cursor-default dark:bg-slate-700 '
                 : ' bg-yellow-300 hover:bg-yellow-400 transition-all duration-200 dark:text-slate-900'
-            }     px-2 py-1 rounded-md flex gap-2 items-center `}
+            }     px-2 py-1 rounded-md flex gap-2 items-center`}
             onClick={handleSave}
           >
             {isLoading
