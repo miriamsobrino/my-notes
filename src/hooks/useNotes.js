@@ -41,8 +41,8 @@ export const useNotes = () => {
 
   const getGridDisplay = () => {
     const length = notes.length;
-    if (length <= 1) return 'flex gap-4 justify-center items-center';
-    if (length > 1)
+    if (length <= 0) return 'flex gap-4 justify-center items-center';
+    if (length > 0)
       return 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ';
     return 'text-yellow-500';
   };
